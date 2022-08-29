@@ -398,12 +398,12 @@ e.g.    let x = 0
 
 // A.  Make a User
 // 1-2.
-let user = {
-  name: "samantha",
-  email: "sam@gmail.com",
-  age: 32,
-  purchased: [],
-}
+// let user = {
+//   name: "samantha",
+//   email: "sam@gmail.com",
+//   age: 32,
+//   purchased: [],
+// }
 
 // B. Update the User
 // 1.
@@ -445,8 +445,8 @@ let user = {
 
 // 1. write a friend object into user
 
-user.friend = { name: "Joe", age: 25, purchased: [], location: "downtown" }
-console.log(user)
+// user.friend = { name: "Joe", age: 25, purchased: [], location: "downtown" }
+// console.log(user)
 
 // E. 2
 // console.log(user.friend['name']);
@@ -479,63 +479,68 @@ console.log(user)
 // G. Functions can operate on Objects
 
 // G 1.
-function upDateUser() {
-  user.age++
-  user.name.toUpperCase()
-}
-
-upDateUser()
-console.log(user.name, user.age)
-
-// // G. 2.
-
-oldAndLoud = (person) => {
-  person.age++
-  person.name.toUpperCase()
-}
-
-oldAndLoud(user)
-console.log(user)
-
-// // Cat Combinator
-// // 1. Mama Cat
-
-// let cat1 = {
-//     "name": Frisky,
-//     "breed": Calico,
-//     "age": 7
-// }
-// console.log(cat1.name)
-// console.log(cat1.age)
-
-// // 2. Papa Cat
-// let cat2 = {
-//     "name": "Crinkles",
-//     "breed": "Tiger cat",
-//     "age": 9
+// function upDateUser() {
+//   user.age++
+//   user.name = user.name.toUpperCase()
 // }
 
-// // 3. Combine Cats
-// combineCats = (mama, papa) => {
+// upDateUser()
+// console.log(user.name, user.age)
+
+// G. 2.
+
+// oldAndLoud = (person) => {
+//   person.age++
+//   person.name = person.name.toUpperCase()
+// }
+
+// oldAndLoud(user.friend)
+// console.log(user.friend)
+
+// Cat Combinator
+// 1. Mama Cat
+
+let cat1 = {
+  name: "Frisky",
+  breed: "Calico",
+  age: 7,
+}
+console.log(cat1.age)
+console.log(cat1.breed)
+
+// 2. Papa Cat
+let cat2 = {
+  name: "Crinkles",
+  breed: "Tigercat",
+  age: 9,
+}
+
+//  3. Combine Cats
+
+// let combineCats = (mama, papa) => {
 //     console.log(mama, papa);
 // }
 
-// combineCats(cat1, cat2);
+// combineCats(cat1, cat2)
 
-// let cat3 = {
-//     "name": mama.name + papa.name,
-//     "age": 1,
-//     "breed": mama.breed + "-" + papa.breed
-// }
-//
+const combinedCats = (mama, papa) => {
+  let cat3 = {
+    name: mama.name + papa.name,
+    age: 1,
+    breed: mama.breed + "-" + papa.breed,
+  }
+  return cat3
+}
 
-// // // combine cats
-// // function combineCats(cat1, cat2) {
-// //   let twoCats = {
-// //     age: 1,
-// //     name: cat1.name + cat2.name,
-// //     breed: cat1.breed + cat2.breed,
-// //   }
-// //   return twoCats
-// // }
-// // console.log(cat1, cat2)
+console.log(combinedCats(cat1, cat2))
+
+// 4. Cat Brain Bender
+
+console.log(
+  combinedCats(
+    combinedCats(combinedCats(cat1, cat2), combinedCats(cat1, cat2)),
+    combinedCats(combinedCats(cat1, cat2), combinedCats(cat1, cat2))
+  )
+)
+
+//console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));

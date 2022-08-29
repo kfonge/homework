@@ -500,20 +500,20 @@ e.g.    let x = 0
 // Cat Combinator
 // 1. Mama Cat
 
-let cat1 = {
-  name: "Frisky",
-  breed: "Calico",
-  age: 7,
-}
-console.log(cat1.age)
-console.log(cat1.breed)
+// let cat1 = {
+//   name: "Frisky",
+//   breed: "Calico",
+//   age: 7,
+// }
+// console.log(cat1.age)
+// console.log(cat1.breed)
 
-// 2. Papa Cat
-let cat2 = {
-  name: "Crinkles",
-  breed: "Tigercat",
-  age: 9,
-}
+// // 2. Papa Cat
+// let cat2 = {
+//   name: "Crinkles",
+//   breed: "Tigercat",
+//   age: 9,
+// }
 
 //  3. Combine Cats
 
@@ -523,24 +523,24 @@ let cat2 = {
 
 // combineCats(cat1, cat2)
 
-const combinedCats = (mama, papa) => {
-  let cat3 = {
-    name: mama.name + papa.name,
-    age: 1,
-    breed: mama.breed + "-" + papa.breed,
-  }
-  return cat3
-}
+// const combinedCats = (mama, papa) => {
+//   let cat3 = {
+//     name: mama.name + papa.name,
+//     age: 1,
+//     breed: mama.breed + "-" + papa.breed,
+//   }
+//   return cat3
+// }
 
-console.log(combinedCats(cat1, cat2))
+// console.log(combinedCats(cat1, cat2))
 
 // 4. Cat Brain Bender
 
-console.log(
-  combinedCats(
-    combinedCats(combinedCats(cat1, cat2), combinedCats(cat1, cat2)),
-    combinedCats(combinedCats(cat1, cat2), combinedCats(cat1, cat2))
-  )
-)
+// console.log(
+//   combinedCats(
+//     combinedCats(combinedCats(cat1, cat2), combinedCats(cat1, cat2)),
+//     combinedCats(combinedCats(cat1, cat2), combinedCats(cat1, cat2))
+//   )
+// )
 
 //console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));

@@ -1,5 +1,5 @@
-////////// Easy Going
-////////////////////////
+////////// Easy Going////////
+//////////////////////////
 
 // for (let i = 0; i <= 20; i++){
 //     console.log(i);
@@ -13,8 +13,8 @@
 //     }
 // }
 
-///////////////////
-/////Fizz Buzz
+//////////////////////
+/////Fizz Buzz////////
 
 // for (let i = 1; i <= 100; i++) {
 //   if (i % 3 == 0 && i % 5 != 0) {
@@ -31,8 +31,8 @@
 //     }
 //   }
 // }
-///////Wild Wild Life
-////////////////////// (name, species, age, hometown)
+///////Wild Wild Life/////
+//////////////////////////(name, species, age, hometown)
 
 // const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
 // const sharky = ["Sharky", "shark", 20, "Left Coast"]
@@ -186,7 +186,7 @@
 /////////////////////////////////////
 //////Find the Median///////////////
 
-const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12]
+// const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12]
 
 // first sort the numbers from small to big
 // select the middle number by dividing array in half (/2)
@@ -195,8 +195,8 @@ const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11
 // let middle = (nums.length / 2)
 // console.log(middle)
 
-let sortedNums = nums.sort()
-console.log(sortedNums)
+// let sortedNums = nums.sort()
+// console.log(sortedNums)
 
-console.log(sortedNums[12])
+// console.log(sortedNums[Math.floor(nums.length/2)])
 

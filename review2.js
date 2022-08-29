@@ -66,7 +66,7 @@
 
 // console.log(turtlesArray)
 
-////////////Methods, Revisited
+////////////Methods, Revisited///////////////
 //////////////////////////////////
 // const favMovies = [
 //   "Jaws",
@@ -157,12 +157,33 @@ whereIsWaldo[1][2] = 'No one'
 console.log(whereIsWaldo)
 console.log(whereIsWaldo[2][1][1])
 
+////////////////////////////////
+///////Excited Kitten/////////
+
+let kitten = 0
+
+while (kitten < 20) {
+ let random = Math.ceil(Math.random()*3) // random is any (rounded up) whole number btw 1-3
+
+  if (kitten % 2 == 0) {
+    //every even number will go through the below 3 options at random depending on the value of random
+    if (random == 1) {
+      console.log("...human... why you taking pictures of me?...")
+    } if (random == 2) {
+      console.log("...the catnip made me do it...")
+    } if (random == 3) {
+      console.log("...why does the red dot always get away...")
+    }
+  }
+  //every odd number will print the below message
+  else {
+    console.log("Love me pet me! HSSSSSSS")
+
+  }
+  kitten++;
+}
+  
+/////////////////////////////////////
+//////Find the Median///////////////
 
 
-//////////////
-///////Excited Kitten
-/////////
-
-//////////////////////
-//////Find the Median
-/////////////////////////////////

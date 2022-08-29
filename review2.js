@@ -127,17 +127,17 @@
 ///////// Where is Waldo///////////
 ////////////////////////////////////////////
 
-const whereIsWaldo = [
-  ["Timmy", "Frank"],
-  "Eggbert",
-  ["Lucinda", "Jacc", "Neff", "Snoop"],
-  ["Petunia", ["Baked Goods", "Waldo"]],
-]
+// const whereIsWaldo = [
+//   ["Timmy", "Frank"],
+//   "Eggbert",
+//   ["Lucinda", "Jacc", "Neff", "Snoop"],
+//   ["Petunia", ["Baked Goods", "Waldo"]],
+// ]
 
 //remove eggbert
-whereIsWaldo.splice(1,1)
+// whereIsWaldo.splice(1,1)
 // console.log(whereIsWaldo.splice(1,1)) //returns the removed item, 'Eggbert'
-console.log(whereIsWaldo)
+// console.log(whereIsWaldo)
 
 
 
@@ -151,39 +151,52 @@ console.log(whereIsWaldo)
 // Change neff to no one 
 // First access Neff, keeping in mind that splice mutated the array so Eggbert is gone. 
 // console.log(whereIsWaldo[1][2])
-whereIsWaldo[1][2] = 'No one'
+// whereIsWaldo[1][2] = 'No one'
 
 // Access and log Waldo to console
-console.log(whereIsWaldo)
-console.log(whereIsWaldo[2][1][1])
+// console.log(whereIsWaldo)
+// console.log(whereIsWaldo[2][1][1])
 
 ////////////////////////////////
 ///////Excited Kitten/////////
 
-let kitten = 0
+// let kitten = 0
 
-while (kitten < 20) {
- let random = Math.ceil(Math.random()*3) // random is any (rounded up) whole number btw 1-3
+// while (kitten < 20) {
+//  let random = Math.ceil(Math.random()*3) // random is any (rounded up) whole number btw 1-3
 
-  if (kitten % 2 == 0) {
-    //every even number will go through the below 3 options at random depending on the value of random
-    if (random == 1) {
-      console.log("...human... why you taking pictures of me?...")
-    } if (random == 2) {
-      console.log("...the catnip made me do it...")
-    } if (random == 3) {
-      console.log("...why does the red dot always get away...")
-    }
-  }
-  //every odd number will print the below message
-  else {
-    console.log("Love me pet me! HSSSSSSS")
+//   if (kitten % 2 == 0) {
+//     //every even number will go through the below 3 options at random depending on the value of random
+//     if (random == 1) {
+//       console.log("...human... why you taking pictures of me?...")
+//     } if (random == 2) {
+//       console.log("...the catnip made me do it...")
+//     } if (random == 3) {
+//       console.log("...why does the red dot always get away...")
+//     }
+//   }
+//   //every odd number will print the below message
+//   else {
+//     console.log("Love me pet me! HSSSSSSS")
 
-  }
-  kitten++;
-}
+//   }
+//   kitten++;
+// }
   
 /////////////////////////////////////
 //////Find the Median///////////////
 
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12]
+
+// first sort the numbers from small to big
+// select the middle number by dividing array in half (/2)
+
+// nums.length / 2 //is not a whole number
+// let middle = (nums.length / 2)
+// console.log(middle)
+
+let sortedNums = nums.sort()
+console.log(sortedNums)
+
+console.log(sortedNums[12])
 

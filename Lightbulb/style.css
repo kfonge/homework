@@ -29,4 +29,11 @@ img{
     height: 50px;
     margin: 3rem;
     padding: 2rem;
+    vertical-align: middle;
+    background-color: grey;
+    font-weight: bold;
     }
+.white{
+    background-color: whitesmoke;
+    font-size: larger;
+}

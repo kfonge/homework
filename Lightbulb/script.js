@@ -12,6 +12,14 @@ btn1.classList.add("btn")
 //append btn to the div with switch id
 lightSwitch.appendChild(btn1)
 
+btn1.addEventListener('mouseover', (evt) => {
+document.querySelector(".btn").classList.add("white")
+})
+
+btn1.addEventListener('mouseout', (evt) => {
+    document.querySelector(".btn").classList.remove("white")
+    })
+
 btn1.addEventListener("click", (evt) => {
   if (btn1.innerHTML == "Power On") {
       btn1.innerHTML = "Power Off"

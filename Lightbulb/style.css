@@ -1,0 +1,32 @@
+body{
+    background-color: darkslategrey;
+}
+
+img{
+    width: 350px;
+    height: 350px;
+}
+
+/* CENTERING THE BULB USING FLEX & GRID*/
+/* note, I gave the div around my img the id "bulb" */
+#bulb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+/* Center the botton using switch div */
+#switch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+/* STYLING MY BUTTON CLASS */
+.btn{
+    border-radius: 1rem;
+    height: 50px;
+    margin: 3rem;
+    padding: 2rem;
+    }

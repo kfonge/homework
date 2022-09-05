@@ -1,0 +1,19 @@
+Create a folder with HTML, CSS, and JavaScript files
+Your goal is to create a button that mimics a light switch.
+The initial image should be a lightbulb that is OFF. When the user clicks the button, the lightbulb should turn on (switch images) and vice versa.
+Besides switching the image, make the ON/OFF button cause at least 3 other visual changes to the page. (Example: Changing the background from black to white)
+Use Flex Box or Grid in some way (Example: Centering elements on the page)
+
+
+Light Bulb - ON (Links to an external site.)
+https://toppng.com/uploads/preview/light-bulb-png-transparent-light-bulb-115628766421gdl0skp2k.png
+Light Bulb - OFF
+https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png
+
+// CREATE AN ON-OFF SWITCH AS A BUTTION//
+
+For example, let’s create a <button> that says "Click Me" using JavaScript:
+
+First, you call the document.createElement("button") and assign the returned element to a variable named btn.
+Then, assign the "Click Me" string to the btn.innerHTML property
+Finally, use document.body.appendChild() to append the button element to the <body> tag

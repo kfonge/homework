@@ -8,6 +8,7 @@ const app = express()
 const port = 3000
 
 //Define a root route (homepage)
+
 // pass it two args, file path and a callback function with homies req + res
 app.get(`/`, (req, res) => {
   res.send(
@@ -24,7 +25,7 @@ app.get(`/:num_of_bottles`, (req, res) => {
       }'> take one down, pass it around</a>`
     )
   } else {
-    res.send('<a href='/'>home</a>')
+    res.send("<a href='/'>home</a>")
   }
 })
 

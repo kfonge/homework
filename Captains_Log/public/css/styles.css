@@ -1,7 +1,7 @@
 body {
-    background-color: salmon;
+    background-color: rgb(123, 114, 250);
 }
 
-#fruits-index {
+#logs-index {
     font-size: 20px;
 }

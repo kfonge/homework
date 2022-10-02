@@ -10,6 +10,7 @@ class Show extends React.Component {
     render() {
 
         const log = this.props.log
+        // or destructured below
         // const { name, entry, shipIsBroken, _id } = this.props.log
         //note: we are using parenthese with return in react
         //this.props allow us to access data passed in as object to res.render

@@ -23,10 +23,10 @@ const showNewView = (req, res) => {
 
 // ROUTE     POST /logs     (create)
 const createNewLog = (req, res) => {
-  if (req.body.isShipBroken === "on") {
-    req.body.isShipBroken = true
+  if (req.body.shipIsBroken === "on") {
+    req.body.shipIsBroken = true
   } else {
-    req.body.isShipBroken = false
+    req.body.shipIsBroken = false
   }
   // Create has two arguments:
   //   1st: the data we want to send
@@ -49,7 +49,7 @@ const showOneLog = (req, res) => {
     if (err) {
       res.status(400).json(err)
     } else {
-      res.status(200).render("logs/Show", { log: foundLog })
+      res.status(200).render("./Show", { log: foundLog })
     }
   })
 }
@@ -60,12 +60,12 @@ const showEditView = (req, res) => {
     if (err) {
       res.status(400).json(err)
     } else {
-      res.status(200).render("logs/Edit", { log: foundLog })
+      res.status(200).render("./Edit", { log: foundLog })
     }
   })
 }
 
-// ROUTE     PUT /logs/:id       (update)
+// ROUTE       (update)
 const updateOneLog = (req, res) => {
   if (req.body.shipIsBroken === "on") {
     req.body.shipIsBroken = true

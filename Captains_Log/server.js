@@ -1,6 +1,9 @@
 // Load Express
 const express = require("express")
 
+//require method override to use at 29
+const methodOverride = require('method-override')
+
 // Create Express app
 const app = express()
 
@@ -23,6 +26,7 @@ app.engine("jsx", require("express-react-views").createEngine())
 // Middleware - used to parse incoming request bodies into data/objects and properties on backend, instead of just res.send('string')
 app.use(express.urlencoded({ extended: false }))
 app.use(express.static("public"))
+app.use(express.json())
 app.use(methodOverride("_method"))
 
 ///////// Route - Index////////////
@@ -31,7 +35,7 @@ app.use(methodOverride("_method"))
 //   res.render("index")
 // })
 
-//////// Route - New////////////
+//////// Route - Index////////////
 app.use('/logs', logRoutes)
 
 // app.get("/new", (req, res) => {

@@ -1,0 +1,39 @@
+
+#ul{
+  display:grid;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 2fr 2fr ;
+  grid-gap: 50px;
+}
+#li{
+  
+  list-style: none;
+}
+
+h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  width: 100 vh;
+}
+
+body{
+  text-align: center;
+  background-color: beige;
+  padding: 5%;
+}
+
+#name{
+  background-color: rgb(15, 75, 45);
+  width: 200px;
+  height: 50%;
+  border-radius: 5%;
+}
+
+h3{
+  padding:12%;
+  font-family:Arial,
+}
+*{
+  box-sizing: border-box;
+}
